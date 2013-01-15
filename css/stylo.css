@@ -1,0 +1,222 @@
+
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	/*background: #BDBDBD;	*/
+	background:#BDBDBD ;
+	color: white;
+	font-family: Helvetica, Curier;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+		
+	}
+		
+h1
+{
+	text-align: center;
+	text-shadow:5px 5px 10px rgba(0,0,0,0.5);
+	color: blue;
+	margin: 0;
+	padding: 0;
+
+}
+
+#contenedor{
+	width: 790px;/* 690px defino el tamaño de la pagina*/
+	margin: 0 auto;
+	}
+	
+#ns{
+	width: 0 auto;
+	margin: 0 auto;	
+	background-color: red;
+	height: 5%;
+	
+		}
+
+#uno
+{
+	background: #424242;
+	border-radius: 1em;
+	color:orangered;
+	/*display: block;*/
+	margin:0.25em auto;	 /*-- 0.5 em auto separación entre cajas--*/
+	padding: 3em;			 /*<!3--anchura y altura de cajas-->*/
+	text-align: center;
+	/*width:690; 690px defino el tamaño de la pagina*/
+	text-shadow:5px 5px 10px rgba(0,0,0,0.5);
+			
+}
+
+	
+#uno:hover{
+	background:#ccc;;
+	}
+
+#navMenu {
+	margin: 0 auto;
+	padding: 0;
+	
+	/*float:center;  verificaf pa que sirve el float*/
+	/*position: relative;   verificar pa que sirve el relative*/
+	/*width:790px;/* defino el tamaño de la pagina 760*/
+	
+}
+
+#navMenu ul{
+	margin: 0 auto;/*0*/
+	padding:0;
+	line-height:40px;/*espacio inferior del borde  de el contenido */
+	position: relative;/*relative*/
+	left: 30%; /*ajuste del mune desplegable*/
+	width: 0 auto;
+	
+
+}
+
+#navMenu li{
+	margin:0; 
+	padding: 2; /*3--- checar dañael diseño*/
+	list-style:none;
+	float:left;/*left */
+	position:relative;
+	background:#999;
+	border-radius: 0.5em;	/*<!-- redondea los bordes-->*/
+	-ms-border-radius: 0.5em;
+	position: relative;
+	right: 30%;/* 30% ajuste del menu despegable*/
+	
+
+	
+}
+
+#navMenu ul li a {
+	text-align:center;
+	font-family:"Comic Sans MS", cursive;
+	font-weight:500;
+	text-decoration:none;
+	height:30px;/* Altura de las opciones del menu*/
+	width:154px; /*152px anchura de las opcione del menu*/
+	display:block;
+	color:#2E2EFE;	
+	text-shadow:5px 5px 10px rgba(0,0,0,0.5);
+	border-radius: 0.5em ;	/*<!-- redondea los bordes-->*/
+	-ms-border-radius: 0.5em ;
+	
+	
+	
+}
+
+#navMenu ul ul {
+	position:absolute;
+	visibility:hidden;
+	/*top:32px;*/
+	display:inline;
+	margin: 0;
+	float: center;
+
+}
+
+#navMenu ul li:hover ul {
+	visibility:visible;
+	margin: 0;	}
+
+
+#navMenu li:hover {
+	background: #1C1C1C;
+	padding: 2px;/*hace mas pequeño el li y hace el efecto de agregar un margen a cada li*/
+}
+
+#navMenu ul li:hover ul li a:hover {
+	background:#ccc;
+	color:#00f;
+	/*padding: 2px;/*agrega un espacio entre el li y el Ul*/
+}
+
+
+#navMenu a:hover {/*verificar el funcionamiento*/
+	color: white;
+}
+
+.efecto {
+	clear:both;
+	margin:0.1 auto;
+	padding:0;
+}
+
+#derecha{
+	background: white;
+	border-radius: 1em;
+	-ms-border-radius: 1em;
+	color: #2E2EFE;
+	display: inline-block;
+	margin:0.5em auto;
+	float: left; /*left*/
+	height: 60%;
+	text-align:justify;
+	text-shadow:5px 5px 10px rgba(0,0,0,0.5);
+	/*vertical-align: top;*/
+	width: 30%;
+	}
+
+#izquierda{
+	background: white;
+	border-radius: 1em;
+	color: #2E2EFE;
+	display: inline-block;
+	float: right;
+	font-family: courier;
+	font-size: 120%;
+	height: 60%;
+	margin: 0.5em auto;
+	padding: 0.25;
+	text-align:center;
+	text-shadow: 10px 10px 15px rgba(5,3,4,5);
+	/*vertical-align: top;*/
+	width: 67%;
+	}
+
+#pie{
+	/*background:#2E2E2E;*/
+	color:goldenrod;
+	border-radius:1.5em;
+	display:block; 	
+	height: 8%;
+	/*margin: 0.5em auto;*/
+	width: 100%;
+	text-align: center;
+	text-decoration:blink;
+	font-size: 70%;
+	line-height:550%;
+	}
+	
+#dos{
+		text-align:justify;
+		font-family: Courier;	
+		font-size: 120%;	
+		}
+/*listas con css
+list-style-type --> tipo de marcador
+list-style-image --> imagen como marcador
+list-style-position --> marcador dentro del texto o en margen 
+display 	    --> poner elementos en horizontal
+*/
+
+/*ul {
+display:inline;
+list-style-image:url("img.gif");
+list-style-type: disc;
+
+}
+*/
+
+
+
+
